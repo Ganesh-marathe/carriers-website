@@ -4,8 +4,9 @@ import "./styles/themes.css";
 import { Navbar } from "./components/Navbar/navbar.js";
 import { Hero } from "./components/Hero/hero.js";
 import { About } from "./components/About/about.js";
+import { Projects } from "./components/Projects/projects.js";
 
 document.querySelector("#app").innerHTML =
-  Navbar() + Hero() + About();
+  Navbar() + Hero() + About() + Projects();
 
 console.log("Carriers Website initialized");

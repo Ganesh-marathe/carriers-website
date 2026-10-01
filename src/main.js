@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero/hero.js";
 import { About } from "./components/About/about.js";
 import { Projects } from "./components/Projects/projects.js";
 import { Skills } from "./components/Skills/skills.js";
+import { Experience } from "./components/Experience/experience.js";
 document.querySelector("#app").innerHTML =
-  Navbar() + Hero() + About() + Projects() + Skills();
+  Navbar() + Hero() + About() + Projects() + Skills() + Experience();
 console.log("Carriers Website initialized");

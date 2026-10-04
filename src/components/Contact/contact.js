@@ -21,21 +21,33 @@ export function Contact() {
 
       <div class="contact-links">
 
-        <a href="mailto:ganeshmarathe361@gmail.com">
+        <a href="mailto:ganeshmarathe9552@gmail.com">
           <span>Email</span>
-          <strong>ganeshmarathe361@gmail.com →</strong>
+          <strong>ganeshmarathe9552@gmail.com →</strong>
         </a>
 
-        <a href="https://github.com/Ganesh-marathe"
+        <a href="https://github.com/Ganesh-marathe/"
            target="_blank">
           <span>GitHub</span>
           <strong>View GitHub Profile →</strong>
         </a>
 
-        <a href="https://www.linkedin.com/"
+        <a href="https://leetcode.com/u/ganesh__7071/"
            target="_blank">
-          <span>LinkedIn</span>
-          <strong>Connect on LinkedIn →</strong>
+          <span>LeetCode</span>
+          <strong>View Coding Profile →</strong>
+        </a>
+
+        <a href="https://www.kaggle.com/ganeshmarath36"
+           target="_blank">
+          <span>Kaggle</span>
+          <strong>View Kaggle Profile →</strong>
+        </a>
+
+        <a href="https://www.codechef.com/users/rcp_fy_25029"
+           target="_blank">
+          <span>CodeChef</span>
+          <strong>View CodeChef Profile →</strong>
         </a>
 
       </div>
@@ -43,4 +55,3 @@ export function Contact() {
     </section>
   `;
 }
-

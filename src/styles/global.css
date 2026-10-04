@@ -1,1 +1,5 @@
-@import "./variables.css";@import "./reset.css";body{min-height:100vh}.container{width:min(1200px,92%);margin:auto}.btn{border:0;border-radius:var(--radius);padding:12px 20px;cursor:pointer}.btn-primary{background:var(--primary);color:white}.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+@import "./reset.css";
+
+body {
+  min-width: 320px;
+}

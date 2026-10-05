@@ -13,12 +13,20 @@ export function Footer() {
         <a href="#home">Home</a>
         <a href="#work">Work</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://github.com/Ganesh-marathe/" target="_blank">GitHub</a>
+        <a href="https://leetcode.com/u/ganesh__7071/" target="_blank">LeetCode</a>
+        <a href="https://www.kaggle.com/ganeshmarath36" target="_blank">Kaggle</a>
+        <a href="https://www.codechef.com/users/rcp_fy_25029" target="_blank">CodeChef</a>
       </div>
 
       <div class="footer-bottom">
         <span>© 2026 Ganesh Marathe</span>
-        <span>Built with HTML, CSS & JavaScript</span>
+        <span>AI • Data Science • Full Stack</span>
       </div>
 
     </footer>

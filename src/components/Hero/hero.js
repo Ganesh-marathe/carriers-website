@@ -15,10 +15,9 @@ export function Hero() {
         </h1>
 
         <p class="hero-description">
-          B.Tech Artificial Intelligence & Data Science student.
-          I build AI-powered applications and modern web solutions
-          that solve real-world problems.
-        </p>
+  Third-year B.Tech Artificial Intelligence & Data Science student
+  building practical AI-powered and full-stack applications.
+</p>
 
         <div class="hero-buttons">
           <a href="#work" class="hero-primary">View My Work</a>
@@ -26,9 +25,9 @@ export function Hero() {
         </div>
 
         <div class="hero-tags">
-          <span>AI & Data Science</span>
-          <span>Open to Opportunities</span>
-          <span>India</span>
+           <span>AI & Data Science</span>
+           <span>Python</span>
+           <span>Full Stack Development</span>
         </div>
 
       </div>

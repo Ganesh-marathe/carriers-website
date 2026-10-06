@@ -23,18 +23,22 @@ export function About() {
         </div>
 
         <div class="about-card">
-          <h3>3+</h3>
-          <p>Major Projects</p>
-          <span>AI & Full Stack</span>
-        </div>
+  <h3>7.14</h3>
+  <p>Current CGPA</p>
+  <span>B.Tech AI & DS</span>
+</div>
 
-        <div class="about-card">
-          <h3>AI</h3>
-          <p>Primary Focus</p>
-          <span>ML & Data Science</span>
-        </div>
+<div class="about-card">
+  <h3>3+</h3>
+  <p>Major Projects</p>
+  <span>AI & Full Stack</span>
+</div>
 
-      </div>
+<div class="about-card">
+  <h3>AI</h3>
+  <p>Primary Focus</p>
+  <span>ML & Data Science</span>
+</div>
 
       <div class="about-description">
         <p>

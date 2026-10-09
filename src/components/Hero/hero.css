@@ -1,121 +1,216 @@
 .hero {
   min-height: calc(100vh - 70px);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
   align-items: center;
-  justify-content: space-between;
   gap: 70px;
-  padding: 70px 8%;
+  padding: 90px 8%;
   background: #ffffff;
   box-sizing: border-box;
 }
 
 .hero-content {
-  max-width: 650px;
+  max-width: 720px;
 }
 
-.hero-badge {
-  display: inline-block;
-  padding: 9px 16px;
-  border-radius: 20px;
-  background: #f1f1f1;
-  font-size: 12px;
-  letter-spacing: 2px;
+.hero-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 15px;
+  border: 1px solid #e5e5e5;
+  border-radius: 30px;
+  color: #555555;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 1.2px;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #18a558;
 }
 
 .hero h1 {
-  margin: 30px 0 25px;
-  font-size: clamp(50px, 6vw, 82px);
-  line-height: 0.98;
-  letter-spacing: -4px;
-  color: #000000;
+  margin: 30px 0 28px;
+  font-size: clamp(58px, 7vw, 92px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  font-weight: 700;
+  color: #0a0a0a;
+}
+
+.hero h1 span {
+  display: block;
+  color: #777777;
 }
 
 .hero-description {
   max-width: 620px;
-  font-size: 17px;
-  line-height: 1.7;
+  margin: 0;
   color: #555555;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 .hero-buttons {
   display: flex;
+  align-items: center;
   gap: 12px;
-  margin-top: 32px;
+  margin-top: 35px;
 }
 
 .hero-primary,
 .hero-secondary {
-  padding: 15px 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 22px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
+  transition: 0.25s ease;
 }
 
 .hero-primary {
-  color: white;
   background: #000000;
+  color: #ffffff;
+}
+
+.hero-primary:hover {
+  transform: translateY(-2px);
+  background: #222222;
 }
 
 .hero-secondary {
+  border: 1px solid #dddddd;
   color: #111111;
-  border: 1px solid #222222;
+  background: #ffffff;
 }
 
-.hero-tags {
+.hero-secondary:hover {
+  border-color: #111111;
+}
+
+.hero-meta {
   display: flex;
-  gap: 10px;
-  margin-top: 32px;
   flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 30px;
 }
 
-.hero-tags span {
-  padding: 10px 15px;
+.hero-meta span {
+  padding: 8px 13px;
   border-radius: 20px;
-  background: #f1f1f1;
-  font-size: 12px;
-}
-
-.hero-card {
-  width: 390px;
-  padding: 12px;
-  border-radius: 22px;
   background: #f5f5f5;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-}
-
-.hero-card img {
-  width: 100%;
-  height: 470px;
-  object-fit: cover;
-  border-radius: 16px;
-  display: block;
-}
-
-.hero-card-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 5px 5px;
-  font-size: 12px;
   color: #555555;
+  font-size: 12px;
 }
 
-.live-status {
-  color: #16a34a;
+
+/* Right visual */
+
+.hero-visual {
+  width: 100%;
+  max-width: 450px;
+  justify-self: end;
+}
+
+.hero-image-wrapper {
+  padding: 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 24px;
+  background: #f7f7f7;
+}
+
+.hero-image-wrapper img {
+  display: block;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+
+.hero-info-card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  margin-top: 12px;
+  overflow: hidden;
+  border: 1px solid #eeeeee;
+  border-radius: 16px;
+  background: #eeeeee;
+}
+
+.hero-info-card > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 17px 14px;
+  background: #ffffff;
+}
+
+.info-label {
+  color: #888888;
+  font-size: 9px;
+  letter-spacing: 1px;
   font-weight: 600;
 }
 
-@media (max-width: 850px) {
+.hero-info-card strong {
+  color: #111111;
+  font-size: 12px;
+}
+
+
+/* Responsive */
+
+@media (max-width: 900px) {
   .hero {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 50px 6%;
+    grid-template-columns: 1fr;
+    padding: 70px 6%;
   }
 
-  .hero-card {
-    width: 100%;
-    max-width: 390px;
+  .hero-visual {
+    justify-self: start;
+    max-width: 450px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 55px 6%;
+    gap: 45px;
+  }
+
+  .hero h1 {
+    font-size: 52px;
+    letter-spacing: -3px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-image-wrapper img {
+    height: 400px;
+  }
+
+  .hero-info-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-info-card > div {
+    padding: 14px 16px;
   }
 }

@@ -4,80 +4,147 @@ export function Projects() {
   return `
     <section class="projects" id="work">
 
-      <div class="projects-heading">
-        <span>WORK</span>
+      <div class="projects-header">
+        <div>
+          <span class="projects-label">SELECTED WORK</span>
 
-        <h2>
-          Things I've built<br>
-          along the way.
-        </h2>
+          <h2>
+            Projects that solve<br>
+            real problems.
+          </h2>
+        </div>
+
+        <p class="projects-intro">
+          A selection of AI-powered and full-stack applications
+          built to explore ideas and solve practical problems.
+        </p>
       </div>
 
       <div class="projects-grid">
 
+        <!-- Project 1 -->
         <article class="project-card">
-          <img src="/images/projects/reviveai.png" alt="ReviveAI">
+
+          <div class="project-image">
+            <img
+              src="/images/projects/reviveai.png"
+              alt="ReviveAI Revenue Recovery Agent"
+            />
+
+            <span class="project-number">01</span>
+          </div>
 
           <div class="project-info">
-            <span>AI • FULL STACK</span>
+
+            <div class="project-tech">
+              <span>PYTHON</span>
+              <span>FASTAPI</span>
+              <span>AI</span>
+            </div>
 
             <h3>ReviveAI</h3>
 
             <p>
-              AI-powered revenue recovery platform that helps
-              businesses identify failed payments and automate
-              recovery actions.
+              An AI-powered revenue recovery platform designed
+              to track failed payments, organize recovery cases,
+              and support automated recovery workflows.
             </p>
 
-            <a href="https://github.com/Ganesh-marathe/AI-Revenue-Recovery-Agent"
-               target="_blank">
-              View Project →
+            <a
+              href="https://github.com/Ganesh-marathe/AI-Revenue-Recovery-Agent"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="project-link"
+            >
+              Explore Project <span>↗</span>
             </a>
+
           </div>
         </article>
 
 
+        <!-- Project 2 -->
         <article class="project-card">
-          <img src="/images/projects/emission-detector.png"
-               alt="Industrial Emission Detector">
+
+          <div class="project-image">
+            <img
+              src="/images/projects/emission-detector.png"
+              alt="Industrial Emission Detector"
+            />
+
+            <span class="project-number">02</span>
+          </div>
 
           <div class="project-info">
-            <span>AI • ENVIRONMENT</span>
 
-            <h3>Emission Leak Detector</h3>
+            <div class="project-tech">
+              <span>AI</span>
+              <span>DATA ANALYSIS</span>
+              <span>SUSTAINABILITY</span>
+            </div>
+
+            <h3>Industrial Emission Detector</h3>
 
             <p>
-              AI-based system designed to detect industrial
-              emission hotspots and recommend circular alternatives.
+              A project concept focused on identifying industrial
+              emission hotspots and recommending circular
+              alternatives using data-driven analysis.
             </p>
 
-            <a href="#" target="_blank">
-              View Project →
-            </a>
+            <span class="project-status">
+              Project in development
+            </span>
+
           </div>
         </article>
 
 
+        <!-- Project 3 -->
         <article class="project-card">
-          <img src="/images/projects/crop-ai.png"
-               alt="AI Crop Recommendation">
+
+          <div class="project-image">
+            <img
+              src="/images/projects/crop-ai.png"
+              alt="AI Crop Recommendation"
+            />
+
+            <span class="project-number">03</span>
+          </div>
 
           <div class="project-info">
-            <span>AI • AGRICULTURE</span>
+
+            <div class="project-tech">
+              <span>MACHINE LEARNING</span>
+              <span>AGRICULTURE</span>
+            </div>
 
             <h3>AI Crop Recommendation</h3>
 
             <p>
-              Machine learning project that uses agricultural
-              data to recommend suitable crops.
+              A machine-learning project idea focused on using
+              agricultural data to help identify suitable crops
+              for different growing conditions.
             </p>
 
-            <a href="#" target="_blank">
-              View Project →
-            </a>
+            <span class="project-status">
+              Project concept
+            </span>
+
           </div>
         </article>
 
+      </div>
+
+      <div class="projects-footer">
+        <span>BUILDING • LEARNING • IMPROVING</span>
+
+        <a
+          href="https://github.com/Ganesh-marathe/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          More on GitHub ↗
+        </a>
       </div>
 
     </section>

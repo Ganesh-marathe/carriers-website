@@ -4,54 +4,71 @@ export function About() {
   return `
     <section class="about" id="about">
 
-      <div class="about-top">
-        <span class="about-label">ABOUT</span>
+      <div class="about-header">
+        <span class="about-label">ABOUT ME</span>
 
         <h2>
-          An AI & Data Science student
-          
-          who happens to build code.
+          Curious mind.<br>
+          <span>Practical builder.</span>
         </h2>
       </div>
 
-      <div class="about-stats">
+      <div class="about-main">
 
-        <div class="about-card">
-          <h3>7.14</h3>
-          <p>Current CGPA</p>
-          <span>B.Tech AI&DS, RCPIT Shirpur</span>
+        <div class="about-description">
+
+          <p class="about-lead">
+            I'm Ganesh Marathe, an Artificial Intelligence
+            and Data Science engineering student passionate
+            about building useful technology.
+          </p>
+
+          <p>
+            I work with Python, AI concepts, and full-stack
+            development to turn ideas into practical applications.
+            I enjoy learning by building projects and solving
+            real-world problems through technology.
+          </p>
+
+          <a
+            href="https://github.com/Ganesh-marathe/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="about-github-link"
+          >
+            Explore my GitHub <span>↗</span>
+          </a>
+
         </div>
 
-        <div class="about-card">
-  <h3>7.14</h3>
-  <p>Current CGPA</p>
-  <span>B.Tech AI & DS</span>
-</div>
+        <div class="about-stats">
 
-<div class="about-card">
-  <h3>3+</h3>
-  <p>Major Projects</p>
-  <span>AI & Full Stack</span>
-</div>
+          <div class="about-stat">
+            <span class="stat-number">7.14</span>
+            <span class="stat-title">CGPA / 10</span>
+            <span class="stat-description">
+              Academic performance
+            </span>
+          </div>
 
-<div class="about-card">
-  <h3>AI</h3>
-  <p>Primary Focus</p>
-  <span>ML & Data Science</span>
-</div>
+          <div class="about-stat">
+            <span class="stat-number">AI</span>
+            <span class="stat-title">CORE INTEREST</span>
+            <span class="stat-description">
+              Artificial Intelligence & Data Science
+            </span>
+          </div>
 
-      <div class="about-description">
-        <p>
-          I am Ganesh Marathe, a B.Tech Artificial Intelligence
-          and Data Science student focused on building practical
-          AI-powered and full-stack applications.
-        </p>
+          <div class="about-stat">
+            <span class="stat-number">BUILD</span>
+            <span class="stat-title">LEARNING APPROACH</span>
+            <span class="stat-description">
+              Practical projects and continuous learning
+            </span>
+          </div>
 
-        <p>
-          I enjoy solving real-world problems using Python,
-          machine learning, modern web technologies, and data.
-          My goal is to turn ideas into useful, working products.
-        </p>
+        </div>
+
       </div>
 
     </section>

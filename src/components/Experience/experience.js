@@ -4,76 +4,119 @@ export function Experience() {
   return `
     <section class="experience" id="experience">
 
-      <div class="experience-heading">
-        <span>EXPERIENCE</span>
+      <div class="experience-header">
+        <span class="experience-label">EXPERIENCE & JOURNEY</span>
 
         <h2>
-          Learning by<br>
-          building real things.
+          Learning by doing.<br>
+          <span>Growing by building.</span>
         </h2>
+
+        <p>
+          My journey in software development, practical projects,
+          and continuous technical learning.
+        </p>
       </div>
 
-      <div class="experience-list">
+      <div class="experience-timeline">
 
-        <div class="experience-item">
-
-          <div class="experience-date">
-            2026
+        <article class="experience-item">
+          <div class="experience-marker">
+            <span></span>
           </div>
 
           <div class="experience-content">
-            <span>INTERNSHIP</span>
+            <div class="experience-meta">
+              <span class="experience-type">INTERNSHIP</span>
+              <span class="experience-date">WEB DEVELOPMENT</span>
+            </div>
 
             <h3>Web Development Intern</h3>
 
             <h4>SkillCraft Technology</h4>
 
             <p>
-              Worked on responsive web interfaces and
-              JavaScript-based applications. Built interactive
-              projects while improving practical frontend
-              development skills.
+              Worked on practical frontend development tasks,
+              building interactive and responsive web experiences
+              using HTML, CSS, and JavaScript.
             </p>
 
             <div class="experience-tags">
               <span>HTML</span>
               <span>CSS</span>
               <span>JavaScript</span>
-              <span>GitHub</span>
+              <span>Responsive Design</span>
             </div>
           </div>
+        </article>
 
-        </div>
-
-
-        <div class="experience-item">
-
-          <div class="experience-date">
-            2026
+        <article class="experience-item">
+          <div class="experience-marker">
+            <span></span>
           </div>
 
           <div class="experience-content">
-            <span>PROJECT EXPERIENCE</span>
+            <div class="experience-meta">
+              <span class="experience-type">PROJECT EXPERIENCE</span>
+              <span class="experience-date">BACKEND + AI</span>
+            </div>
 
-            <h3>AI & Full-Stack Development</h3>
+            <h3>ReviveAI Revenue Recovery Agent</h3>
 
-            <h4>Personal Projects</h4>
+            <h4>Personal Project</h4>
 
             <p>
-              Building AI-powered and full-stack applications
-              focused on solving practical real-world problems
-              using modern technologies.
+              Developed a revenue recovery application using
+              Python, FastAPI, and SQLite, with recovery logic
+              and a dashboard to help track recovery cases.
             </p>
 
             <div class="experience-tags">
               <span>Python</span>
-              <span>React</span>
               <span>FastAPI</span>
-              <span>MongoDB</span>
+              <span>SQLite</span>
+              <span>REST API</span>
             </div>
+
+            <a
+              class="experience-link"
+              href="https://github.com/Ganesh-marathe/AI-Revenue-Recovery-Agent"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View project <span>↗</span>
+            </a>
+          </div>
+        </article>
+
+        <article class="experience-item">
+          <div class="experience-marker">
+            <span></span>
           </div>
 
-        </div>
+          <div class="experience-content">
+            <div class="experience-meta">
+              <span class="experience-type">EDUCATION</span>
+              <span class="experience-date">B.TECH</span>
+            </div>
+
+            <h3>Artificial Intelligence & Data Science</h3>
+
+            <h4>R. C. Patel Institute of Technology</h4>
+
+            <p>
+              Building a foundation in programming, data science,
+              algorithms, and software development while applying
+              my learning through practical projects.
+            </p>
+
+            <div class="experience-tags">
+              <span>Programming</span>
+              <span>Data Science</span>
+              <span>Problem Solving</span>
+            </div>
+          </div>
+        </article>
 
       </div>
 

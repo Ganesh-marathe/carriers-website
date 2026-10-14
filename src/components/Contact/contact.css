@@ -39,14 +39,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
-  border-top: 1px solid #333333;
-  color: #ffffff;
+  border-top: 1px solid #463838;
+  color: #e42222;
   text-decoration: none;
   transition: 0.2s ease;
 }
 
 .contact-links a:last-child {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #a71d1d;
 }
 
 .contact-links a:hover {
@@ -54,7 +54,7 @@
 }
 
 .contact-links span {
-  color: #888888;
+  color: #704747;
   font-size: 13px;
 }
 

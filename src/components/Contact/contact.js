@@ -4,51 +4,95 @@ export function Contact() {
   return `
     <section class="contact" id="contact">
 
-      <div class="contact-heading">
-        <span>CONTACT</span>
+      <div class="contact-container">
 
-        <h2>
-          Let's build something
-          <br>
-          useful together.
-        </h2>
+        <div class="contact-heading">
+          <span class="contact-label">GET IN TOUCH</span>
 
-        <p>
-          I'm open to internships, opportunities, collaborations,
-          and interesting AI & software projects.
-        </p>
-      </div>
+          <h2>
+            Let's build something<br>
+            <span>meaningful together.</span>
+          </h2>
 
-      <div class="contact-links">
+          <p>
+            Looking for an AI & Data Science intern or a
+            developer to collaborate with? Let's connect
+            and explore opportunities.
+          </p>
+        </div>
 
-        <a href="mailto:ganeshmarathe9552@gmail.com">
-          <span>Email</span>
-          <strong>ganeshmarathe9552@gmail.com →</strong>
-        </a>
+        <div class="contact-content">
 
-        <a href="https://github.com/Ganesh-marathe/"
-           target="_blank">
-          <span>GitHub</span>
-          <strong>View GitHub Profile →</strong>
-        </a>
+          <div class="contact-info">
+            <span class="contact-small-label">CONTACT DETAILS</span>
 
-        <a href="https://leetcode.com/u/ganesh__7071/"
-           target="_blank">
-          <span>LeetCode</span>
-          <strong>View Coding Profile →</strong>
-        </a>
+            <a
+              href="mailto:ganeshmarathe361@gmail.com"
+              class="contact-email"
+            >
+              Email me <span>↗</span>
+            </a>
 
-        <a href="https://www.kaggle.com/ganeshmarath36"
-           target="_blank">
-          <span>Kaggle</span>
-          <strong>View Kaggle Profile →</strong>
-        </a>
+            <div class="contact-divider"></div>
 
-        <a href="https://www.codechef.com/users/rcp_fy_25029"
-           target="_blank">
-          <span>CodeChef</span>
-          <strong>View CodeChef Profile →</strong>
-        </a>
+            <span class="contact-small-label">FIND ME ONLINE</span>
+
+            <div class="contact-socials">
+
+              <a
+                href="https://github.com/Ganesh-marathe/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn <span>↗</span>
+              </a>
+
+              <a
+                href="https://leetcode.com/u/ganesh__7071/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LeetCode <span>↗</span>
+              </a>
+
+              <a
+                href="https://www.kaggle.com/ganeshmarath36"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Kaggle <span>↗</span>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="contact-cta">
+            <span class="contact-cta-number">LET'S CONNECT</span>
+
+            <h3>Have an opportunity<br>or an idea?</h3>
+
+            <p>
+              I'm always interested in learning,
+              collaborating, and building useful technology.
+            </p>
+
+            <a
+              href="mailto:ganeshmarathe361@gmail.com?subject=Portfolio%20Opportunity"
+              class="contact-button"
+            >
+              Start a conversation <span>↗</span>
+            </a>
+          </div>
+
+        </div>
 
       </div>
 

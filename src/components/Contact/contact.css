@@ -1,79 +1,193 @@
 .contact {
-  padding: 120px 8%;
-  background: #000000;
-  color: #ffffff;
+  padding: 110px 8%;
+  background: #f7f7f7;
+  color: #111111;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .contact-heading {
-  max-width: 850px;
+  margin-bottom: 65px;
 }
 
-.contact-heading span {
-  font-size: 12px;
-  letter-spacing: 2px;
+.contact-label {
+  display: inline-block;
+  padding: 8px 14px;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+  color: #555555;
+  font-size: 11px;
   font-weight: 600;
-  color: #aaaaaa;
+  letter-spacing: 1.5px;
 }
 
 .contact-heading h2 {
-  margin: 25px 0;
-  font-size: clamp(45px, 6vw, 76px);
-  line-height: 1;
-  letter-spacing: -4px;
+  margin-top: 25px;
+  font-size: clamp(40px, 5.5vw, 70px);
+  line-height: 1.08;
+  letter-spacing: -3px;
 }
 
-.contact-heading p {
-  max-width: 600px;
-  color: #aaaaaa;
-  font-size: 17px;
-  line-height: 1.7;
+.contact-heading h2 span {
+  color: #888888;
 }
 
-.contact-links {
-  max-width: 850px;
-  margin-top: 65px;
+.contact-heading > p {
+  max-width: 510px;
+  margin-top: 22px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.9;
 }
 
-.contact-links a {
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 0.85fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.contact-info {
+  padding-top: 10px;
+}
+
+.contact-small-label {
+  display: block;
+  color: #888888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.contact-email {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  color: #111111;
+  font-size: 23px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-email span,
+.contact-socials a span {
+  transition: transform 0.2s ease;
+}
+
+.contact-email:hover span,
+.contact-socials a:hover span {
+  transform: translate(3px, -3px);
+}
+
+.contact-divider {
+  height: 1px;
+  margin: 35px 0;
+  background: #e2e2e2;
+}
+
+.contact-socials {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 25px;
+  margin-top: 15px;
+}
+
+.contact-socials a {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 24px 0;
-  border-top: 1px solid #463838;
-  color: #e42222;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.contact-links a:last-child {
-  border-bottom: 1px solid #a71d1d;
-}
-
-.contact-links a:hover {
-  padding-left: 10px;
-}
-
-.contact-links span {
-  color: #704747;
+  padding: 17px 0;
+  border-bottom: 1px solid #e2e2e2;
+  color: #333333;
   font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-.contact-links strong {
-  font-size: 15px;
+.contact-socials a:hover {
+  color: #888888;
 }
 
-@media (max-width: 700px) {
+.contact-cta {
+  padding: 35px;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
+.contact-cta-number {
+  color: #888888;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.contact-cta h3 {
+  margin-top: 28px;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: -1px;
+}
+
+.contact-cta p {
+  margin-top: 16px;
+  color: #777777;
+  font-size: 13px;
+  line-height: 1.9;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  padding: 14px 19px;
+  border-radius: 8px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.contact-button:hover {
+  background: #333333;
+}
+
+@media (max-width: 800px) {
   .contact {
     padding: 80px 6%;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .contact-heading h2 {
     letter-spacing: -2px;
   }
+}
 
-  .contact-links a {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+@media (max-width: 480px) {
+  .contact-cta {
+    padding: 25px;
+  }
+
+  .contact-cta h3 {
+    font-size: 26px;
+  }
+
+  .contact-email {
+    font-size: 19px;
+  }
+
+  .contact-socials {
+    gap: 0 16px;
   }
 }
